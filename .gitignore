@@ -106,3 +106,7 @@ venv.bak/
 # OS stuff:
 .DS_Store
 .idea
+
+#all data of the project to be ignored
+data/
+__trash__/
