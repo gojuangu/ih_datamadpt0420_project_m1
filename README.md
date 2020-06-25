@@ -1,18 +1,16 @@
-# Data Project README file
+#README - Jobs Analysis Project 
 
-The README file describes the essence of the project playing the most important role. Most visitors will simply scroll down about twice on the README and leave if they are not interested. So, the README file should provide the reason **why** to checkout your project!!!). 
-Bearing that in mind, your job is to: 
+The aim of this project is to give an overview of the current labour market.
 - Tell them what it is (with context).
 - Show them what it looks like in action.
 - Show them how they use it.
 - Tell them any other relevant details.
 
-![Image](https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/05/aiexcerpt.png)
 
 ---
 
-## **Formatting**
-Your readers will most likely view your README in a browser so please keep that in mind when formatting its content: 
+## **Data**
+There are 3 different datasource involved: 
 - Use proper format when necesary (e.g.: `import pandas as pd`). 
 - Categorize content using two or three levels of header beneath. 
 - Make use of **emphasis** to call out important words. 
