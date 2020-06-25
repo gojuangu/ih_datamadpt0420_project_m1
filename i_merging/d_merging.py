@@ -35,4 +35,6 @@ def drop_na_jobs(get_info):
 
 #final merge
 def all_merged_to_csv(countries_df, jobs_df, df_clean):
-    countries_df
+    first_merge = df_clean.merge(countries_df, on='country_code')
+    final_merge = first_merge.merge(jobs_df, on='normalized_job_code')
+    final_merge.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/processed/data_merged.csv', index=False)
