@@ -1,8 +1,7 @@
 import argparse
 from i_gathering import d_gathering as dga
-from i_cleaning import d_cleaning as dcl
-#from p_analysis import m_analysis as man
-#from p_reporting import m_reporting as mre
+
+
 
 def argument_parser():
     parser = argparse.ArgumentParser(description='specify inputs')
@@ -15,9 +14,11 @@ def argument_parser():
 
 def main(arguments):
     print('starting pipeline...')
-    bd = dga.get_info(arguments.path)
-    countries = dga.get_country(arguments.url)
-    #jobs = dga.get_info()
+    df_all_tables = dga.get_info(arguments.path)
+    countries_df = dga.get_country(arguments.url)
+    jobs_ids = dga.job_ids(df_all_tables)
+    jobs_df = dga.get_job(jobs_ids)
+    merge = dga.all_merged_to_csv(countries_df, jobs_df, df_all_tables)
 
     print('pipeline finished...')
 
