@@ -1,6 +1,6 @@
 import argparse
 from i_gathering import d_gathering as dga
-
+from i_cleaning import d_cleaning as dcl
 
 
 def argument_parser():
@@ -18,7 +18,9 @@ def main(arguments):
     countries_df = dga.get_country(arguments.url)
     jobs_ids = dga.job_ids(df_all_tables)
     jobs_df = dga.get_job(jobs_ids)
-    merge = dga.all_merged_to_csv(countries_df, jobs_df, df_all_tables)
+    merged_data = dga.all_merged_to_csv(countries_df, jobs_df, df_all_tables)
+    clean_df = dcl.clean_data(merged_data)
+    export_clean = dcl.col_names(clean_df)
 
     print('pipeline finished...')
 

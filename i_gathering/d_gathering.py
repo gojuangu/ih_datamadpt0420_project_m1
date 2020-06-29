@@ -63,7 +63,7 @@ def all_merged_to_csv(countries_df, jobs_df, df_final):
     final_merge = first_merge.merge(jobs_df, on='normalized_job_code', how='left')
     final_merge.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/raw/all_data_merged.csv', index=False)
     print('All data merged, find it in processed data folder')
-
+    return final_merge
 
 # web-scraping functions
 '''
