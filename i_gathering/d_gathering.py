@@ -34,7 +34,7 @@ def job_ids(df_final):
 With the list of the above function (input) gives you all the info from every job id provided (output)
 '''
 def get_job(jobs_id):
-    print('calling the api...')
+    print('Calling the api...')
     jobs_name = []
     for id in jobs_id:
         if id == None:
@@ -46,7 +46,7 @@ def get_job(jobs_id):
     jobs_df_raw = pd.DataFrame(jobs_name)
     jobs_df = jobs_df_raw.rename(columns={'uuid': "normalized_job_code"})
     jobs_df.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/raw/jobs.csv')
-    print('call finished :)')
+    print('Call finished, data can be found in /data/raw folder :)')
     return jobs_df
 
 def get_country(url):

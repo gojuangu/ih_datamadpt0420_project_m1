@@ -1,6 +1,6 @@
 #README - Jobs Analysis Project 
 
-The aim of this project is to give an overview of the current labour market.
+The aim of this project is to extract data in order to understand give an overview of the current labour market.
 - Tell them what it is (with context).
 - Show them what it looks like in action.
 - Show them how they use it.
@@ -10,32 +10,56 @@ The aim of this project is to give an overview of the current labour market.
 ---
 
 ## **Data**
-There are 3 different datasource involved: 
-- Use proper format when necesary (e.g.: `import pandas as pd`). 
-- Categorize content using two or three levels of header beneath. 
-- Make use of **emphasis** to call out important words. 
-- Link to project pages for related libraries you mention. Link to Wikipedia, Wiktionary, even Urban Dictionary definitions for words of which a reader may not be familiar. Make amusing cultural references. 
-- Add links to related projects or services. 
+There are 3 different datasource involved:
+- A **Database** that contains all the info regarding the poll made to participants and all they personal information. 
+- An **API** that returns all the information about the jobs of the participants in the poll.
+- A complete ISO 3166-1 encoding list from **Wikipedia** of all the world countries. 
+
+Use the below links to find the data:
+- [Database](www.potacho.com/files/ironhack/raw_data_project_m1.db)
+- [API](http://dataatwork.org/data/)
+- [Countries](https://en.wikipedia.org/wiki/ISO_3166-1)
+
 
 > Here you have a markdown cheatsheet [Link](https://commonmark.org/help/) and tutorial [Link](https://commonmark.org/help/tutorial/).
 
 
-## **Start writing ASAP:**
+## **Inputs:**
 *Last but not least, by writing your README soon you give yourself some pretty significant advantages. Most importantly, you’re giving yourself a chance to think through the project without the overhead of having to change code every time you change your mind about how something should be organized or what should be included.*
+- AT - *Austria*
+- BE - *Belgium*
+- BG - *Bulgaria*
+- CY - *Cyprus*
+- CZ - *Czechia*
+- DE - *Germany*
+- DK - *Denmark*
+- EE - *Estonia*
+- ES - *Spain*
+- FI - *Finland*
+- FR - *France*
+- GB - *United Kingdom of Great Britain and Northern Ireland*
+- GR - *Greece*
+- HR - *Croatia*
+- HU - *Hungary*
+- IE - *Ireland*
+- IT - *Italy*
+- LT - *Lithuania*
+- LU - *Luxembourg*
+- LV - *Latvia*
+- MT - *Malta*
+- NL - *Netherlands*
+- PL - *Poland*
+- PT - *Portugal*
+- RO - *Romania*
+- SE - *Sweden*
+- SI - *Slovenia*
+- SK - *Slovakia*
 
 
-## **Suggested Structure:**
+### **Status**: WIP
+This is the first part of the Ironhack Data Analytics Final Project.
 
-### :raising_hand: **Name** 
-Self-explanatory names are best. If the name sounds too vague or unrelated, it may be a signal to move on. It also must be catchy. Images, Logo, Gif or some color is strongly recommended.
-
-### :baby: **Status**
-Alpha, Beta, 1.1, Ironhack Data Analytics Final Project, etc... It's OK to write a sentence, too. The goal is to let interested people know where this project is at.
-
-### :running: **One-liner**
-Having a one-liner that describes the pipeline/api/app is useful for getting an idea of what your code does in slightly greater detail. 
-
-### :computer: **Technology stack**
+### **Technology stack**
 Python, Pandas, Scipy, Scikit-learn, etc. Indicate the technological nature of the software, including primary programming language(s), main libraries and whether the software is intended as standalone or as a module in a framework or other ecosystem.
 
 ### :boom: **Core technical concepts and inspiration**
@@ -46,29 +70,6 @@ Requeriments, prerequisites, dependencies, installation instructions.
 
 ### :see_no_evil: **Usage**
 Parameters, return values, known issues, thrown errors.
-
-### :file_folder: **Folder structure**
-```
-└── project
-    ├── __trash__
-    ├── .gitignore
-    ├── .env
-    ├── requeriments.txt
-    ├── README.md
-    ├── main_script.py
-    ├── notebooks
-    │   ├── notebook1.ipynb
-    │   └── notebook2.ipynb
-    ├── package1
-    │   ├── module1.py
-    │   └── module2.py
-    └── data
-        ├── raw
-        ├── processed
-        └── results
-```
-
-> Do not forget to include `__trash__` and `.env` in `.gitignore` 
 
 ### :shit: **ToDo**
 Next steps, features planned, known bugs (shortlist).
