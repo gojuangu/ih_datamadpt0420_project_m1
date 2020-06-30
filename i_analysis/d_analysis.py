@@ -1,5 +1,6 @@
 import pandas as pd
 from pandas import ExcelWriter
+
 # analysis functions
 def requested_table(df, country):
 
@@ -14,8 +15,6 @@ def requested_table(df, country):
         df4 = df3[df3['Country'] == f'{country}']
 
         df4['percetange'] = df4['counts'].apply(lambda x: '{:.3%}'.format((x / df4['counts'].sum())))
-        #df4.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/results/{country}_prueba.csv')
-        #print(f'DF of {country} analysed!')
         writer = ExcelWriter(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/results/pruebaj.xlsx')
         frames = {'All Data': df3, f'{country} data': df4}
         for sheet, frame in frames.items():

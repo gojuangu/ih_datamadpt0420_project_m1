@@ -1,4 +1,4 @@
-#README - Jobs Analysis Project 
+#README - Jobs / Basic Income Analysis Project 
 
 The aim of this project is to extract data in order to understand give an overview of the current labour market.
 - Tell them what it is (with context).
@@ -25,35 +25,34 @@ Use the below links to find the data:
 
 
 ## **Inputs:**
-*Last but not least, by writing your README soon you give yourself some pretty significant advantages. Most importantly, you’re giving yourself a chance to think through the project without the overhead of having to change code every time you change your mind about how something should be organized or what should be included.*
-- AT - *Austria*
-- BE - *Belgium*
-- BG - *Bulgaria*
-- CY - *Cyprus*
-- CZ - *Czechia*
-- DE - *Germany*
-- DK - *Denmark*
-- EE - *Estonia*
-- ES - *Spain*
-- FI - *Finland*
-- FR - *France*
-- GB - *United Kingdom of Great Britain and Northern Ireland*
-- GR - *Greece*
-- HR - *Croatia*
-- HU - *Hungary*
-- IE - *Ireland*
-- IT - *Italy*
-- LT - *Lithuania*
-- LU - *Luxembourg*
-- LV - *Latvia*
-- MT - *Malta*
-- NL - *Netherlands*
-- PL - *Poland*
-- PT - *Portugal*
-- RO - *Romania*
-- SE - *Sweden*
-- SI - *Slovenia*
-- SK - *Slovakia*
+*Here's thr list of all the countries you will find in the database, you can select as many you want to analyse*
+- Belgium - BE
+- Bulgaria - BG
+- Cyprus - CY
+- Czechia - CZ
+- Germany - DE
+- Denmark - DK
+- Estonia - EE
+- Spain - ES
+- Finland - FI
+- France - FR
+- United Kingdom of Great Britain and Northern Ireland - GB
+- Greece - GR
+- Croatia - HR
+- Hungary - HU
+- Ireland - IE
+- Italy - IT
+- Lithuania - LT
+- Luxembourg - LU
+- Latvia - LV
+- Malta - MT
+- Netherlands - NL
+- Poland - PL
+- Portugal - PT
+- Romania - RO
+- Sweden - SE
+- Slovenia - SI
+- Slovakia - SK
 
 
 ### **Status**: WIP
@@ -61,9 +60,6 @@ This is the first part of the Ironhack Data Analytics Final Project.
 
 ### **Technology stack**
 Python, Pandas, Scipy, Scikit-learn, etc. Indicate the technological nature of the software, including primary programming language(s), main libraries and whether the software is intended as standalone or as a module in a framework or other ecosystem.
-
-### :boom: **Core technical concepts and inspiration**
-Why does it exist? Frame your project for the potential user. Compare/contrast your project with other, similar projects so the user knows how it is different from those projects. Highlight the technical concepts that your project demonstrates or supports. Keep it very brief.
 
 ### :wrench: **Configuration**
 Requeriments, prerequisites, dependencies, installation instructions.
@@ -81,15 +77,6 @@ Credits, alternatives, references, license.
 Getting help, getting involved, hire me please.
 
 ---
-
-> Here you have some repo examples:
-- [Mamba (OCR-Translator-Assistant)](https://github.com/YonatanRA/OCR-translator-assistant-project)
-- [Art Classification](https://github.com/serguma/art_classification)
-- [OSNet-IBN (width x 1.0) Lite](https://github.com/RodMech/OSNet-IBN1-Lite)
-- [Movie Founder](https://github.com/Alfagu/final-project-Ironhack-0419mad)
-- [Convolutional Neural Network to detect Pneumonia](https://github.com/jmolins89/final-project)
-- [Brain tumor detection project](https://github.com/alonsopdani/brain-tumor-detection-project)
-- [Policy-Gradient-Methods](https://github.com/cyoon1729/Policy-Gradient-Methods)
 
 > Here you have some tools and references:
 - [Make a README](https://www.makeareadme.com/)

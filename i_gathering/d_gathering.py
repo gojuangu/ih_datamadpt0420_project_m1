@@ -3,7 +3,6 @@ import pandas as pd
 from functools import reduce
 import requests
 from bs4 import BeautifulSoup
-import requests
 
 '''
 The below function provide the dataframe (output)with all the info that the database contains
