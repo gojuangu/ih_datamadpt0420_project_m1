@@ -49,7 +49,8 @@ def get_job(jobs_id):
     print('Call finished, data can be found in /data/raw folder :)')
     return jobs_df
 
-def get_country(url):
+def get_country():
+    url = 'https://en.wikipedia.org/wiki/ISO_3166-1'
     all_countries_info = pd.read_html(url, header=0)[1]
     needed_cols = ['English short name (using title case)', 'Alpha-2 code']
     countries_df = all_countries_info[needed_cols].rename(columns={'Alpha-2 code': "country_code"})

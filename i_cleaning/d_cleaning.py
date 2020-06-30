@@ -33,7 +33,11 @@ def clean_data(df):
 def col_names(df_clean):
     print('Changing col names')
 
-    df_clean.rename(columns={'age': 'Age (years old)', 'dem_has_children': 'Has Children?', 'age_group': 'Age Group', 'English short name (using title case)': 'Country', 'title': 'Job Title'}, inplace=True)
+    df_clean.rename(columns={'age': 'Age (years old)',
+                             'dem_has_children': 'Has Children?',
+                             'age_group': 'Age Group',
+                             'English short name (using title case)': 'Country',
+                             'title': 'Job Title'}, inplace=True)
     df_clean.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/processed/clean_df.csv')
 
     print('DF all clean and exported :)')
