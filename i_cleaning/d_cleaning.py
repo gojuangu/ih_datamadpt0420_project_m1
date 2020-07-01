@@ -34,6 +34,9 @@ def col_names(df_clean):
     df_clean.rename(columns={'age': 'Age (years old)',
                              'dem_has_children': 'Has Children?',
                              'age_group': 'Age Group',
+                             'gender': 'Gender',
+                             'rural': 'Area',
+                             'question_bbi_2016wave4_basicincome_vote': 'Basic Income Vote',
                              'English short name (using title case)': 'Country',
                              'title': 'Job Title'}, inplace=True)
     df_clean.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/processed/clean_df.csv')

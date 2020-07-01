@@ -1,33 +1,32 @@
-#import pandas as pd
-#import matplotlib.pyplot as plt
-#import seaborn as sns
+from pandas import ExcelWriter
 
 # reporting functions
 
-'''
-def visualize_barplot(df,title):
-    fig, ax = plt.subplots(figsize=(15,8))
-    chart = sns.barplot(data=df, x='Make', y='Combined MPG')
-    plt.title(title + "\n", fontsize=16)
-    return chart
+def to_excel(df_f, countries, df_cs, df_gr, df_ag, df_ar):
+    print('Exporting data')
+    if countries is not None:
+        df_c = df_f[df_f['Country'].isin(countries)]
+        df_c['percetange'] = df_c['Quantity'].apply(lambda x: '{:.3%}'.format((x / df_c['Quantity'].sum())))
 
-def visualize_lineplot(df,title):
-    fig, ax = plt.subplots(figsize=(15,8))
-    chart = sns.lineplot(data=df, x='Make', y='Combined MPG')
-    plt.title(title + "\n", fontsize=16)
-    return chart
-'''
-'''
-def plotting_function(df,title,args):
-    fig, ax = plt.subplots(figsize=(16,8))
-    plt.title(title + "\n", fontsize=16)
-    if args.bar == True:
-        sns.barplot(data=df, x='Make', y='Combined MPG')
-        return fig
-    elif args.line == True:
-        sns.lineplot(data=df, x='Make', y='Combined MPG')
-        return fig
+        writer = ExcelWriter(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/results/final_data_countries.xlsx')
+        frames = {'All Data': df_f,
+                  'Countries data': df_c,
+                  'BI info by countries': df_cs,
+                  'BI info by gender': df_gr,
+                  'BI info by age group': df_ag,
+                  'BI info by area': df_ar}
 
-def save_viz(fig,title):
-    fig.savefig('./data/results/' + title + '.png')
-'''
+        for sheet, frame in frames.items():
+            frame.to_excel(writer, sheet_name= sheet, index=False)
+        writer.save()
+    else:
+        writer = ExcelWriter(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/results/final_data.xlsx')
+        frames = {'All Data': df_f,
+                  'BI info by countries': df_cs,
+                  'BI info by gender': df_gr,
+                  'BI info by age group': df_ag,
+                  'BI info by area': df_ar}
+
+        for sheet, frame in frames.items():
+            frame.to_excel(writer, sheet_name=sheet, index=False)
+        writer.save()

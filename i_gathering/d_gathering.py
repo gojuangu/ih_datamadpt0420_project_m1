@@ -18,7 +18,7 @@ def get_info(path):
 
     dfs = [pd.read_sql_query(f'select * from {i}', engine) for i in tables_lst]
     df_all_tables = reduce(lambda left, right: pd.merge(left, right, on='uuid'), dfs)
-    df_all_tables.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/raw/data_base_raw.csv')
+    df_all_tables.to_csv(f'../ih_datamadpt0420_project_m1/data/raw/data_base_raw.csv')
     return df_all_tables
 
 '''
@@ -44,7 +44,7 @@ def get_job(jobs_id):
             jobs_name.append(json_data)
     jobs_df_raw = pd.DataFrame(jobs_name)
     jobs_df = jobs_df_raw.rename(columns={'uuid': "normalized_job_code"})
-    jobs_df.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/raw/jobs.csv')
+    jobs_df.to_csv(f'../ih_datamadpt0420_project_m1/data/raw/jobs.csv')
     print('Call finished, data can be found in /data/raw folder :)')
     return jobs_df
 
@@ -53,7 +53,7 @@ def get_country():
     all_countries_info = pd.read_html(url, header=0)[1]
     needed_cols = ['English short name (using title case)', 'Alpha-2 code']
     countries_df = all_countries_info[needed_cols].rename(columns={'Alpha-2 code': "country_code"})
-    countries_df.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/raw/countries.csv')
+    countries_df.to_csv(f'../ih_datamadpt0420_project_m1/data/raw/countries.csv')
     return countries_df
 
 #final merge
@@ -61,7 +61,7 @@ def all_merged_to_csv(countries_df, jobs_df, df_final):
     df_database = df_final
     first_merge = df_database.merge(countries_df, on='country_code')
     final_merge = first_merge.merge(jobs_df, on='normalized_job_code', how='left')
-    final_merge.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/raw/all_data_merged.csv', index=False)
+    final_merge.to_csv(f'../ih_datamadpt0420_project_m1/data/raw/all_data_merged.csv', index=False)
     print('All data merged, find it in processed data folder')
     return final_merge
 
