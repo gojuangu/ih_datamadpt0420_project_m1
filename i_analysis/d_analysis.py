@@ -18,8 +18,6 @@ def basic_income_cs(df):
     countries_resp = pd.DataFrame(
         df1.groupby(['Country', 'Basic Income Vote']).size()).reset_index()
     countries_resp = countries_resp.rename(columns={0: 'Quantity'})
-    countries_resp['Percetange'] = countries_resp['Quantity'].apply(
-        lambda j: '{:.0%}'.format((j) / countries_resp['Quantity'].sum()))
     return countries_resp
 
 def basic_income_gr(df):

@@ -7,8 +7,8 @@ from i_reporting import d_reporting as dre
 
 def argument_parser():
     parser = argparse.ArgumentParser(description='specify inputs')
-    parser.add_argument('-p', "--path", type=str, help='specify database', required=True)
-    parser.add_argument('-c', "--countries", type=str, nargs='+', help='selected on country of the list to anlyse')
+    parser.add_argument('-p', "--path", type=str, help='specify database path', required=True)
+    parser.add_argument('-c', "--countries", type=str, nargs='+', help='selected on country of the list to analyse')
     args = parser.parse_args()
 
     return args
