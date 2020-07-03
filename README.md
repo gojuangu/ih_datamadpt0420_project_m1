@@ -1,10 +1,6 @@
-#README - Jobs / Basic Income Analysis Project 
+## **README - Jobs / Basic Income Analysis Project**
 
-The aim of this project is to extract data in order to understand give an overview of the current labour market.
-- Tell them what it is (with context).
-- Show them what it looks like in action.
-- Show them how they use it.
-- Tell them any other relevant details.
+This pipeline allows you to understand the perception of the basic income in the EU among different types of respondents, based on they origin country, gender, age group and area of living. It tries to answer the following question: Are Europeans against basic income? 
 
 
 ---
@@ -25,34 +21,34 @@ Use the below links to find the data:
 
 
 ## **Inputs:**
-*Here's thr list of all the countries you will find in the database, you can select as many you want to analyse*
-- Belgium - BE
-- Bulgaria - BG
-- Cyprus - CY
-- Czechia - CZ
-- Germany - DE
-- Denmark - DK
-- Estonia - EE
-- Spain - ES
-- Finland - FI
-- France - FR
+*Two inputs are needed to run the pipeline: the first one is the path where you have stored the databse, and the second one (it's optional) the country or countries you want to look at more detail. Here's the available list of countries:*
+- Belgium
+- Bulgaria
+- Cyprus
+- Czechia
+- Germany
+- Denmark
+- Estonia
+- Spain
+- Finland
+- France
 - United Kingdom of Great Britain and Northern Ireland - GB
-- Greece - GR
-- Croatia - HR
-- Hungary - HU
-- Ireland - IE
-- Italy - IT
-- Lithuania - LT
-- Luxembourg - LU
-- Latvia - LV
-- Malta - MT
-- Netherlands - NL
-- Poland - PL
-- Portugal - PT
-- Romania - RO
-- Sweden - SE
-- Slovenia - SI
-- Slovakia - SK
+- Greece
+- Croatia
+- Hungary
+- Ireland
+- Italy
+- Lithuania
+- Luxembourg
+- Latvia
+- Malta
+- Netherlands
+- Poland
+- Portugal
+- Romania
+- Sweden
+- Slovenia
+- Slovakia
 
 
 ### **Status**: WIP
