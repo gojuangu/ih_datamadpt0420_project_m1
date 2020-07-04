@@ -16,8 +16,8 @@ def get_info(path):
     tables = pd.read_sql_query("SELECT name FROM sqlite_master WHERE type='table'", engine)
     tables_lst = tables['name'].to_list()
 
-    dfs = [pd.read_sql_query(f'select * from {i}', engine) for i in tables_lst]
-    df_all_tables = reduce(lambda left, right: pd.merge(left, right, on='uuid'), dfs)
+    all_dfs = [pd.read_sql_query(f'select * from {i}', engine) for i in tables_lst]
+    df_all_tables = reduce(lambda left, right: pd.merge(left, right, on='uuid'), all_dfs)
     df_all_tables.to_csv(f'../ih_datamadpt0420_project_m1/data/raw/data_base_raw.csv')
     return df_all_tables
 

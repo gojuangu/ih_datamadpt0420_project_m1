@@ -59,27 +59,6 @@ Use the below links to find the data:
 This is the first part of the Ironhack Data Analytics Final Project.
 
 ### **Technology stack**
-Python, Pandas, Scipy, Scikit-learn, etc. Indicate the technological nature of the software, including primary programming language(s), main libraries and whether the software is intended as standalone or as a module in a framework or other ecosystem.
+Jupyter Notebook, Pycharm, Python, Pandas, Numpy, Argparse, Sqlalchemy, Functools and Excel Writer
 
-### :wrench: **Configuration**
-Requeriments, prerequisites, dependencies, installation instructions.
-
-### :see_no_evil: **Usage**
-Parameters, return values, known issues, thrown errors.
-
-### :shit: **ToDo**
-Next steps, features planned, known bugs (shortlist).
-
-### :information_source: **Further info**
-Credits, alternatives, references, license.
-
-### :love_letter: **Contact info**
-Getting help, getting involved, hire me please.
-
----
-
-> Here you have some tools and references:
-- [Make a README](https://www.makeareadme.com/)
-- [Awesome README](https://github.com/matiassingers/awesome-readme)
-- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
