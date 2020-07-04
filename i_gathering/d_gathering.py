@@ -9,7 +9,7 @@ The below function provide the dataframe (output)with all the info that the data
 get the info from the provided database (input)
 '''
 def get_info(path):
-    print('importing the db...')
+    print('Importing the db...')
     sqlitedb_path = path
     engine = create_engine(f'sqlite:///{sqlitedb_path}')
 
@@ -26,7 +26,7 @@ This function extracts a list of the jobs ids (output) from the dataframe of the
 '''
 def job_ids(df_final):
     jobs_ids = list(df_final['normalized_job_code'].unique())
-    print('import finsihed :)')
+    print('Import finsihed :)')
     return jobs_ids
 
 '''

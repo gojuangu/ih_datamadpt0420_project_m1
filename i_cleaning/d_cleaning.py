@@ -41,6 +41,6 @@ def col_names(df_clean):
                              'title': 'Job Title'}, inplace=True)
     df_clean.to_csv(f'/home/juan/IronHack/ih_datamadpt0420_project_m1/data/processed/clean_df.csv')
 
-    print('DF all clean and exported :)')
+    print('DF clean and exported :)')
 
     return df_clean

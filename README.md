@@ -32,7 +32,6 @@ Use the below links to find the data:
 - Spain
 - Finland
 - France
-- United Kingdom of Great Britain and Northern Ireland - GB
 - Greece
 - Croatia
 - Hungary
